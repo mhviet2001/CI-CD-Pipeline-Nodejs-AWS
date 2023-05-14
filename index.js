@@ -26,8 +26,8 @@ app.get('/admin', (req, res) => {
     const containerName = os.hostname();
     console.log('CI/CD pipeline in AWS');
     res.json({
-        serviceName: 'Admin ECS demo CICD',
-        contact: 'study-aws@gmail.com',
+        serviceName: 'I am admin',
+        contact: 'admin@gmail.com',
         clientIp,
         albIp,
         containerIp,
@@ -45,5 +45,5 @@ app.use((err, req, res, next) => {
 });
 
 app.listen(8080, () => {
-    console.log('App started successfully');
+    console.log('App listening on port 8080!');
 });
