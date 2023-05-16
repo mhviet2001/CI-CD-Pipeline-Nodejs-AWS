@@ -10,7 +10,7 @@ app.get('/', (req, res) => {
     const containerName = os.hostname();
     console.log('CI/CD Pipeline in AWS');
     res.json({
-        serviceName: 'Hello bro, How are you today?',
+        serviceName: 'Hello everyone, How are you today?',
         contact: 'maihoangviet4869@gmail.com',
         clientIp,
         albIp,
